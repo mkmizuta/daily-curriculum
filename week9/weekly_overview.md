@@ -30,7 +30,7 @@ In week 9 we will be focusing on comprehension of the rails request cycle. Stude
 
 | Time              | Topic               |
 |:-----------------:|:--------------------|
-| **9:00 - 9:15**   | Quiz                |
+| **9:00 - 9:15**   | [Quiz](https://canvas.instructure.com/courses/819456/quizzes/893427)                |
 | **9:15 - 9:30**   | Stand Up            |
 | **9:30 - 11:15**  | [Controller methods](tuesday/controller-methods.md)        |
 | **11:15 - 5:00**  | [Media Ranker](resources/media_ranker.md)          |
@@ -40,9 +40,9 @@ In week 9 we will be focusing on comprehension of the rails request cycle. Stude
 
 | Time              | Topic               |
 |:-----------------:|:--------------------|
-| **9:00 - 9:15**   | Quiz                |
+| **9:00 - 9:15**   | [Quiz](https://canvas.instructure.com/courses/819456/quizzes/893988)                |
 | **9:15 - 9:30**   | Stand Up            |
-| **9:30 - 11:15**  | [Controller methods](wednesday/view-methods.md)        |
+| **9:30 - 11:15**  | [View methods](wednesday/view-methods.md)        |
 | **11:15 - 5:00**  | [Media Ranker](resources/media_ranker.md)          |
 
 ### Thursday
@@ -59,6 +59,37 @@ In week 9 we will be focusing on comprehension of the rails request cycle. Stude
 | Time              | Topic               |
 |:-----------------:|:--------------------|
 | **9:00 - 9:15**   | Stand Up            |
-| **9:30 - 11:00**  | [What to spec?](friday/what-to-spec.md)        |
-| **11:00 - 12:00**  | [Comprehension Test](https://canvas.instructure.com/courses/819456/quizzes/891812)        |
+| **9:15 - 9:45**   | Quiz Prep Time      |
+| **9:45 - 10:45**  | [Comprehension Test](https://canvas.instructure.com/courses/819456/quizzes/891812)        |
+| **10:45 - 12:00**  | [Rspec Tools](friday/rspec-tools.md)        |
 | **11:15 - 5:00**  | [Media Ranker](resources/media_ranker.md)          |
+
+**Homework**
+
+Use a TDD approach, either:
+
+Create your own app
+
+OR
+
+Create a single serving (no users) version of Twitter. The app should have:
+
+- Tweet model
+    - body (must be present, max 140 characters long)
+    - author
+- TweetsController
+    - An `index` action which shows all of the tweets
+    - A `show` action to view a specific tweet
+    - A `new` action (optional, you can put the form on `index`)
+    - A `create` action where tweets are created
+
+- tweet_spec.rb
+    - Testing validations of body (presence and length)
+    - Testing any addition methods you add
+- tweets_controller_spec.rb
+    - Test each controller action
+    - No need to test private actions
+    
+**Extra Credit**
+
+Implement Users using a TDD approach.
